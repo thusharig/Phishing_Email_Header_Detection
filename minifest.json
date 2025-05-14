@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Phishing Email Detector",
+  "version": "1.0",
+  "description": "Detect and notify users of potential phishing emails.",
+  "permissions": ["notifications", "scripting", "activeTab"],
+  "host_permissions": [
+    "http://127.0.0.1:5000/*",
+    "http://localhost:5000/*"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon.png"
+  },
+  "background": {
+    "service_worker": "notify.js"
+  },
+  "icons": {
+    "128": "icon.png"
+  }
+}
