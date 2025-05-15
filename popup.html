@@ -1,56 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Email Check</title>
-  <link rel="stylesheet" href="style.css">
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f2f7fb;
-      padding: 15px;
-      width: 300px;
-    }
-
-    h3 {
-      color: #333;
-      margin-bottom: 10px;
-    }
-
-    input, textarea {
-      width: 100%;
-      margin-bottom: 10px;
-      padding: 8px;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      font-size: 14px;
-    }
-
-    button {
-      width: 100%;
-      padding: 10px;
-      background-color: #007bff;
-      color: white;
-      border: none;
-      border-radius: 4px;
-      font-size: 14px;
-      cursor: pointer;
-    }
-
-    button:hover {
-      background-color: #0056b3;
-    }
-
-    #result {
-      margin-top: 10px;
-      font-weight: bold;
-    }
-  </style>
+  <meta charset="UTF-8">
+  <title>Phishing Header Analyzer</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h3>Phishing Email Check</h3>
-  <input id="subject" placeholder="Subject"><br>
-  <textarea id="body" placeholder="Email body" rows="5"></textarea><br>
-  <button id="checkBtn">Check Email</button>
+
+  <h2>Phishing Email Check</h2>
+  <label for="headerInput">Paste Email Headers:</label>
+  <textarea id="headerInput" placeholder="Paste full email headers here..."></textarea>
+  <button id="analyzeBtn">Check Headers</button>
   <div id="result"></div>
   <script src="popup.js"></script>
 </body>
